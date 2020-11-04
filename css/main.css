@@ -1,0 +1,143 @@
+/* Base Setting */
+html { font-size: 62.5%; }
+body { font-size: 1.6rem; }
+body * {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: rgb(87, 68, 111);
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Common */
+.body__container {
+    background: rgb(130, 190, 190);
+    height: 100vh;
+}
+
+.wrapper {
+    max-width: 144rem;
+    margin: 0 auto;
+    padding: 5rem;
+}
+
+/* clear-fix */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* SUMMARY */
+.summary__title {
+    font-size: 4.2rem;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    line-height: 1;
+    width: 30rem;
+    background: rgba(181, 175, 151, .5);
+    padding: 1.5rem 1rem;
+    border-radius: .5rem;
+}
+
+.summary__description {
+    font-size: 1.8rem;
+    font-weight: 200;
+    line-height: 1.25;
+    letter-spacing: 2;
+}
+
+/* BTN */
+.btn {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: url('../assets/button.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    opacity: .5;
+}
+
+.btn:nth-child(2) {
+    background-position: right center;
+}
+
+/* HEADER */
+header nav {
+    box-sizing: border-box;
+    padding: 0 5rem;
+    margin-bottom: 5rem;
+}
+
+nav h1 {
+    float: left;
+    font-size: 3.4rem;
+    font-weight: 400;
+    border-bottom: .2rem solid rgba(0, 139, 176, 0);
+    transition: .5s;
+}
+
+nav h1:hover {
+    border-bottom: .2rem solid rgba(0, 139, 176, .7);
+}
+
+nav ul {
+    float: right;
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: 200;
+}
+
+nav ul li a {
+    display: block;
+    padding: .7rem 1rem;
+    transition: .3s;
+}
+
+nav ul li a:hover {
+    background: rgba(0, 139, 176, .5);
+    border-radius: .5rem;
+    border-bottom: .1rem solid rgba(0, 139, 176, .7);
+}
+
+/* MAIN */
+.inner {
+    width: 100%;
+    height: 75vh;
+    position: relative;
+}
+
+.inner img {
+    width: 80%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.inner .summary__title {
+    position: absolute;
+    left: 10rem;
+    top: 40%;
+}
+
+.inner .summary__description {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+}
+
+.inner .btn-group {
+    position: absolute;
+    top: 5%;
+    right: 2.5%;
+    display: flex;
+    justify-content: space-around;
+    width: 10rem;    
+}
