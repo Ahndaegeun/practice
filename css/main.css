@@ -12,7 +12,7 @@ a {
 
 /* Common */
 .body__container {
-    background: rgb(130, 190, 190);
+    background: #FFF;
     height: 100vh;
 }
 
@@ -34,10 +34,10 @@ a {
     font-size: 4.2rem;
     font-weight: 700;
     text-align: center;
-    color: #fff;
+    color: #333;
     line-height: 1;
     width: 30rem;
-    background: rgba(181, 175, 151, .5);
+    background: rgba(136, 131, 131, 0.514);
     padding: 1.5rem 1rem;
     border-radius: .5rem;
 }
